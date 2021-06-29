@@ -11,6 +11,7 @@ const locale = {
 const App = () => (
   <div className="pagination-container home-page" >
     <div className="box">我是盒子</div>
+    <p className="describe">我是说明我是说明我是说明我是说明我是说明我是说明我是说明我是说明</p>
 
     <div className="title">以下是ant-mobile组件</div>
     <Pagination total={5} current={1} locale={locale} />

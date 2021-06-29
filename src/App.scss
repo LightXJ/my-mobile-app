@@ -1,3 +1,13 @@
+@mixin font-dpr($font-size){
+  font-size: $font-size;
+  [data-dpr="2"] & {
+      font-size: $font-size * 2;
+  }
+  [data-dpr="3"] & {
+      font-size: $font-size * 3;
+  }
+}
+
 .home-page {
   .box {
     background-color: orange;
@@ -11,5 +21,8 @@
   .title {
     font-size: 30px;
     padding: 20px 0;
+  }
+  .describe {
+    @include font-dpr(16PX);
   }
 }
