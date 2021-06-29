@@ -1,4 +1,5 @@
 import { Pagination, Icon } from 'antd-mobile';
+import { Button } from 'zarm';
 import './App.scss';
 
 const locale = {
@@ -10,10 +11,10 @@ const locale = {
 const App = () => (
   <div className="pagination-container home-page" >
     <div className="box">我是盒子</div>
-    <p className="sub-title">Button with text</p>
+
+    <div className="title">以下是ant-mobile组件</div>
     <Pagination total={5} current={1} locale={locale} />
 
-    <p className="sub-title">Button with text and icon</p>
     <Pagination total={5}
       className="custom-pagination-with-icon"
       current={1}
@@ -23,14 +24,18 @@ const App = () => (
       }}
     />
 
-    <p className="sub-title">Hide number</p>
+
     <Pagination simple total={5} current={1} locale={locale} />
 
-    <p className="sub-title">Show number only</p>
+
     <Pagination mode="number" total={5} current={3} />
 
-    <p className="sub-title">Point style</p>
+
     <Pagination mode="pointer" total={5} current={2} style={{ marginBottom: '16px' }} />
+
+    <div className="title">以下是Zarm组件</div>
+    <Button>default</Button>
+    <Button theme="primary">primary</Button>
   </div>
 );
 

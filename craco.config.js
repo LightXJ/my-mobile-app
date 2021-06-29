@@ -5,6 +5,7 @@ module.exports = {
     plugins: [
       // 配置 babel-plugin-import
       ['import', { libraryName: 'antd-mobile', libraryDirectory: 'es', style: true }, 'antd'],
+      ['import', { libraryName: 'zarm', libraryDirectory: 'es', style: true }, 'zarm'],
     ],
   },
   plugins: [
