@@ -34,9 +34,9 @@ const App = () => (
 
     <Pagination mode="pointer" total={5} current={2} style={{ marginBottom: '16px' }} />
 
-    {/* <div className="title">以下是Zarm组件</div>
+    <div className="title">以下是Zarm组件</div>
     <Button>default</Button>
-    <Button theme="primary">primary</Button> */}
+    <Button theme="primary">primary</Button>
   </div>
 );
 
